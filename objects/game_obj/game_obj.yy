@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "block",
-    "path": "sprites/block/block.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
@@ -24,11 +21,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "room",
-    "path": "folders/Objects/room.yy",
+    "name": "utility",
+    "path": "folders/Objects/utility.yy",
   },
   "resourceVersion": "1.0",
-  "name": "blockObj",
+  "name": "game_obj",
   "tags": [],
   "resourceType": "GMObject",
 }
