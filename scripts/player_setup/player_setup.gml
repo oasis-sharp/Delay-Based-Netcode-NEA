@@ -1,7 +1,7 @@
 function player_setup(){
 	
-	image_xscale=2;
-	image_yscale=2;
+	image_xscale=4;
+	image_yscale=4;
 	
 	walk_speed = 5;
 	gravity_accel = 1.2;

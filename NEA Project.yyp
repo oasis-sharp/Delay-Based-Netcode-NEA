@@ -13,6 +13,7 @@
     {"id":{"name":"find_in_array","path":"scripts/find_in_array/find_in_array.yy",},"order":0,},
     {"id":{"name":"create_trail","path":"scripts/create_trail/create_trail.yy",},"order":1,},
     {"id":{"name":"block_obj","path":"objects/block_obj/block_obj.yy",},"order":0,},
+    {"id":{"name":"set_controls","path":"scripts/set_controls/set_controls.yy",},"order":2,},
     {"id":{"name":"player_script","path":"scripts/player_script/player_script.yy",},"order":0,},
     {"id":{"name":"player_setup","path":"scripts/player_setup/player_setup.yy",},"order":1,},
     {"id":{"name":"input","path":"scripts/input/input.yy",},"order":1,},
