@@ -20,6 +20,7 @@ if (place_meeting(x,y+1,block_obj))
 {
 	add_to_array(STATE, "grounded");
 }
+
 else{
 	delete_from_array(STATE, "grounded");	
 }
