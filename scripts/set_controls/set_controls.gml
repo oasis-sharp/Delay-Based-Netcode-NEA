@@ -1,6 +1,11 @@
-/// @function example(exampleParam, exampleParam2);
-/// @param {index} exampleParam  Description
-/// @param {real}  exampleParam2  Description
 function set_controls(){
-
+	right = ord("D");
+	left = ord("A");
+	down = ord("S");
+	up = ord("W");
+	
+	jump = vk_space;
+	dodge = ord("L");
+	special = ord("O");
+	normal = ord("P");
 }

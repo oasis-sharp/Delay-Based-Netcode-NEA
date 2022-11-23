@@ -1,11 +1,8 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "player",
-  "spriteId": {
-    "name": "idle",
-    "path": "sprites/idle/idle.yy",
-  },
+  "name": "button_parent",
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,
@@ -31,7 +28,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "player",
-    "path": "folders/Objects/player.yy",
+    "name": "buttons",
+    "path": "folders/Objects/buttons.yy",
   },
 }
