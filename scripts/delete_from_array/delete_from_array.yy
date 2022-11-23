@@ -1,12 +1,11 @@
 {
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "delete_from_array",
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "utility",
-    "path": "folders/Scripts/utility.yy",
+    "name": "array",
+    "path": "folders/Scripts/utility/array.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "delete_from_array",
-  "tags": [],
-  "resourceType": "GMScript",
 }
