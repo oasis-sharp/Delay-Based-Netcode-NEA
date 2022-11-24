@@ -35,7 +35,7 @@ if(find_in_array(STATE, "grounded") != -4 and (jumpPressed)){
 	{
 	    while (!place_meeting(x+px,y,block_obj))
 	    {
-	        x = x + px;
+	        x = round(x + px);
 	    }
 	    hsp = 0;
 	}
@@ -47,7 +47,7 @@ if(find_in_array(STATE, "grounded") != -4 and (jumpPressed)){
 	{
 	    while (!place_meeting(x,y+px,block_obj))
 	    {
-	        y = y + px;
+	        y = round(y + px);
 	    }
 	    vsp = 0;
 	}

@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "block_obj",
   "spriteId": {
-    "name": "block",
-    "path": "sprites/block/block.yy",
+    "name": "block_filled",
+    "path": "sprites/block_filled/block_filled.yy",
   },
   "solid": false,
   "visible": true,
@@ -24,7 +24,9 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {

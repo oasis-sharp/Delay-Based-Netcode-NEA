@@ -1,13 +1,13 @@
 function player_setup(){
 	
-	image_xscale=8;
-	image_yscale=8;
+	image_xscale=1;
+	image_yscale=1;
 	
-	walk_speed = 6;
-	gravity_accel = 3;
+
+	gravity_accel = 0.5;
 	
-	hsp_walk = 12;
-	vsp_jump = -35;
+	hsp_walk = 3;
+	vsp_jump = -5;
 	
 	vsp = 0;
 	hsp = 0;
