@@ -3,13 +3,23 @@ function player_script(){
 
 
 	var move = (rightHeld - leftHeld);
+	
 	if(move != 0 and find_in_array(STATE, "grounded") != -4){
 		hsp = move * hsp_walk;
 	}
 	else{ 
 		
 		if(find_in_array(STATE, "grounded") == -4 and move!=0){
-			hsp+=air_accel*move;
+			if(move == 1){
+				if(hsp < max_x){
+					hsp+=air_accel*move;
+				}
+			}
+			else{
+				if(hsp > -max_x){
+					hsp+=air_accel*move;
+				}
+			}
 		}
 		
 		if(find_in_array(STATE, "grounded") != -4){
@@ -41,7 +51,7 @@ function player_script(){
 		delete_from_array(STATE, "grounded");	
 	}
 	
-	if(find_in_array(STATE, "grounded") != -4 and (jumpPressed)){
+	if(find_in_array(STATE, "grounded") != -4 and (jumpHeld)){
 		vsp = vsp_jump; 	
 	}
 
@@ -52,7 +62,7 @@ function player_script(){
 	// wallljump code
 	if(place_meeting(x+move,y,block_obj)){
 		if(find_in_array(STATE, "grounded") == -4 and vsp > 0){
-			create_trail(10,c_black,100,0.5,0.99, x+move,y);
+			
 			vsp/=wallslide_fr;
 		}
 	
