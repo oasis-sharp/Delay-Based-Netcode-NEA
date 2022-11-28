@@ -22,4 +22,6 @@ function player_setup(){
 	
 	STATE = [];
 	
+	image_blend = c_black;
+	
 }

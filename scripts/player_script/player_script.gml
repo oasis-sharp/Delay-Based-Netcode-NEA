@@ -32,7 +32,9 @@ function player_script(){
 	}
 
 	if(move != 0){
-		image_xscale=abs(image_xscale)*move
+		if(find_in_array(STATE, "grounded") != -4){
+			image_xscale=abs(image_xscale)*move
+		}
 		sprite_index = walk;
 	}
 	else{
@@ -69,6 +71,7 @@ function player_script(){
 		if(move = px and jumpPressed and find_in_array(STATE, "grounded") == -4){
 			hsp = move*walljump_speed;
 			vsp = vsp_jump;
+			image_xscale = -move;
 		}
 	}	
 		
