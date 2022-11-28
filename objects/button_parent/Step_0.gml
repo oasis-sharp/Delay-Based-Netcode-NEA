@@ -8,3 +8,4 @@ if(position_meeting(mouse_x,mouse_y,id)){
 else{
 	image_blend = c_white;	
 }
+ 
