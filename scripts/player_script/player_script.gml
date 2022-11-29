@@ -24,7 +24,6 @@ function player_script(){
 		
 		if(find_in_array(STATE, "grounded") != -4){
 		hsp*=fric;
-	
 			if(abs(hsp) < 1){
 				hsp = 0;	
 			}
@@ -33,7 +32,7 @@ function player_script(){
 
 	if(move != 0){
 		if(find_in_array(STATE, "grounded") != -4){
-			image_xscale=abs(image_xscale)*move
+			image_xscale=move
 		}
 		sprite_index = walk;
 	}
@@ -46,15 +45,17 @@ function player_script(){
 
 	if (place_meeting(x,y+1,block_obj))
 	{
-		add_to_array(STATE, "grounded");
+		if(add_to_array(STATE, "grounded")){
+			// landing particle code	
+		}
 	}
 
 	else{
-		delete_from_array(STATE, "grounded");	
+		delete_from_array(STATE, "grounded");
 	}
 	
 	if(find_in_array(STATE, "grounded") != -4 and (jumpHeld)){
-		vsp = vsp_jump; 	
+		vsp = vsp_jump; 
 	}
 
 
@@ -63,8 +64,8 @@ function player_script(){
 	
 	// wallljump code
 	if(place_meeting(x+move,y,block_obj)){
+		
 		if(find_in_array(STATE, "grounded") == -4 and vsp > 0){
-			
 			vsp/=wallslide_fr;
 		}
 	
@@ -72,6 +73,7 @@ function player_script(){
 			hsp = move*walljump_speed;
 			vsp = vsp_jump;
 			image_xscale = -move;
+	
 		}
 	}	
 		
@@ -94,6 +96,7 @@ function player_script(){
 	    {
 	        y = round(y + px);
 	    }
+
 	    vsp = 0;
 	}
 	y = y + vsp;

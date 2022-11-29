@@ -94,6 +94,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Fonts","folderPath":"folders/Fonts.yy","order":4,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Objects","folderPath":"folders/Objects.yy","order":6,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"buttons","folderPath":"folders/Objects/buttons.yy","order":6,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"gun","folderPath":"folders/Objects/gun.yy","order":7,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"player","folderPath":"folders/Objects/player.yy","order":2,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"room","folderPath":"folders/Objects/room.yy","order":4,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"utility","folderPath":"folders/Objects/utility.yy","order":5,},
@@ -121,7 +122,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"defaults","folderPath":"folders/Sprites/playerAnims/defaults.yy","order":1,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy","order":0,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy","order":5,},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"gun","folderPath":"folders/Objects/gun.yy","order":7,},
   ],
   "AudioGroups": [
     {"resourceType":"GMAudioGroup","resourceVersion":"1.3","name":"audiogroup_default","targets":-1,},

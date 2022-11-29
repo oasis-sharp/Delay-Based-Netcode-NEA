@@ -6,7 +6,7 @@ function player_setup(){
 
 	gravity_accel = 0.4;
 	walljump_speed = -3;
-	wallslide_fr = 1.3;
+	wallslide_fr = 1.5;
 	
 	hsp_walk = 2;
 	vsp_jump = -4.2;
@@ -23,5 +23,11 @@ function player_setup(){
 	STATE = [];
 	
 	image_blend = c_black;
+	
+	x_stretch = 1;
+	y_stretch = 1;
+	
+	x_stretch_speed = 1.1;
+	y_stretch_speed = 1.05;
 	
 }
