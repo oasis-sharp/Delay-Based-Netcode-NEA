@@ -23,6 +23,7 @@
     {"id":{"name":"walk_old","path":"sprites/walk_old/walk_old.yy",},"order":1,},
     {"id":{"name":"button_parent","path":"objects/button_parent/button_parent.yy",},"order":0,},
     {"id":{"name":"array_translation","path":"scripts/array_translation/array_translation.yy",},"order":5,},
+    {"id":{"name":"particle_parent","path":"objects/particle_parent/particle_parent.yy",},"order":1,},
     {"id":{"name":"trail_obj","path":"objects/trail_obj/trail_obj.yy",},"order":0,},
     {"id":{"name":"host_ob","path":"objects/host_ob/host_ob.yy",},"order":1,},
     {"id":{"name":"hitbox_effects","path":"scripts/hitbox_effects/hitbox_effects.yy",},"order":0,},

@@ -1,20 +1,14 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "smoke",
-  "spriteId": {
-    "name": "pixel",
-    "path": "sprites/pixel/pixel.yy",
-  },
+  "name": "particle_parent",
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "particle_parent",
-    "path": "objects/particle_parent/particle_parent.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
