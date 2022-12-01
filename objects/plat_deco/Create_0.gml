@@ -1,4 +1,4 @@
-while(!place_meeting(x,y+1, block_obj) or image_yscale > 100){
+while(!place_meeting(x,y+1, block_obj) and image_yscale < 100){
 	image_yscale+=1;	
 }
 

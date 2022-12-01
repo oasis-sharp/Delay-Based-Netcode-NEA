@@ -1,14 +1,20 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "particle_parent",
-  "spriteId": null,
+  "name": "smoke_walk",
+  "spriteId": {
+    "name": "pixel",
+    "path": "sprites/pixel/pixel.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "particle_parent",
+    "path": "objects/particle_parent/particle_parent.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,

@@ -34,7 +34,7 @@ if(array_equals(new_array, [-4, -4, b ,b]) or array_equals(new_array, [b ,b, -4,
 
 if(array_equals(new_array, [b,b,b,b])){
 	if(array_translation(cols[1].cols[0]) == b){
-		sprite_index = block_floor;
+	//	sprite_index = block_floor;
 	}
 }
 

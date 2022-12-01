@@ -6,6 +6,7 @@ function player_script(){
 	
 	if(move != 0 and find_in_array(STATE, "grounded") != -4){
 		hsp = move * hsp_walk;
+		create_smoke_walk(hsp_walk);
 	}
 	else{ 
 		
@@ -43,13 +44,14 @@ function player_script(){
 	vsp = vsp + gravity_accel;
 
 
-	if (place_meeting(x,y+1,block_obj))
-	{
+	if (place_meeting(x,y+vsp,block_obj)) {
 		if(add_to_array(STATE, "grounded")){
 			// landing particle code	
+			if(vsp > 2){
+				create_smoke(abs(vsp)*5);
+			}
 		}
 	}
-
 	else{
 		delete_from_array(STATE, "grounded");
 	}
@@ -67,6 +69,7 @@ function player_script(){
 		
 		if(find_in_array(STATE, "grounded") == -4 and vsp > 0){
 			vsp/=wallslide_fr;
+			create_smoke_wall(3);
 		}
 	
 		if(move = px and jumpPressed and find_in_array(STATE, "grounded") == -4){
