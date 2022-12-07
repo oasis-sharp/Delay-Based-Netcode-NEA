@@ -22,6 +22,7 @@
     {"id":{"name":"gun_parent","path":"objects/gun_parent/gun_parent.yy",},"order":0,},
     {"id":{"name":"idle_old","path":"sprites/idle_old/idle_old.yy",},"order":5,},
     {"id":{"name":"walk_old","path":"sprites/walk_old/walk_old.yy",},"order":1,},
+    {"id":{"name":"test_scripts","path":"scripts/test_scripts/test_scripts.yy",},"order":7,},
     {"id":{"name":"button_parent","path":"objects/button_parent/button_parent.yy",},"order":0,},
     {"id":{"name":"array_translation","path":"scripts/array_translation/array_translation.yy",},"order":5,},
     {"id":{"name":"particle_parent","path":"objects/particle_parent/particle_parent.yy",},"order":1,},

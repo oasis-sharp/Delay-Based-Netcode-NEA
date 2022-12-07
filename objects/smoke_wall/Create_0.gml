@@ -14,6 +14,6 @@ fade_speed = 0.05;
 y_accel = random_range(0, -1)/100;
 x_accel = 0;
 				
-image_xscale = random_range(2,2);
+image_xscale = random_range(1,2);
 image_yscale = image_xscale;
 

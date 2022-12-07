@@ -69,7 +69,7 @@ function player_script(){
 		
 		if(find_in_array(STATE, "grounded") == -4 and vsp > 0){
 			vsp/=wallslide_fr;
-			create_smoke_wall(3);
+			create_smoke_wall(2);
 		}
 	
 		if(move = px and jumpPressed and find_in_array(STATE, "grounded") == -4){
