@@ -30,4 +30,7 @@ function player_setup(){
 	x_stretch_speed = 1.1;
 	y_stretch_speed = 1.05;
 	
+
+	camera_ = instance_create_layer(x, y, "Instances_1", camera);
+	
 }

@@ -47,6 +47,7 @@
     {"id":{"name":"camera","path":"objects/camera/camera.yy",},"order":1,},
     {"id":{"name":"pipe_corner_double","path":"sprites/pipe_corner_double/pipe_corner_double.yy",},"order":1,},
     {"id":{"name":"block_floor_hatched_straight","path":"sprites/block_floor_hatched_straight/block_floor_hatched_straight.yy",},"order":4,},
+    {"id":{"name":"loadingScreen","path":"rooms/loadingScreen/loadingScreen.yy",},"order":2,},
     {"id":{"name":"smoke_walk","path":"objects/smoke_walk/smoke_walk.yy",},"order":3,},
     {"id":{"name":"pipe_double","path":"sprites/pipe_double/pipe_double.yy",},"order":3,},
     {"id":{"name":"create_trail","path":"scripts/create_trail/create_trail.yy",},"order":1,},
@@ -94,6 +95,7 @@
   },
   "RoomOrderNodes": [
     {"roomId":{"name":"menu","path":"rooms/menu/menu.yy",},},
+    {"roomId":{"name":"loadingScreen","path":"rooms/loadingScreen/loadingScreen.yy",},},
     {"roomId":{"name":"gameRoom","path":"rooms/gameRoom/gameRoom.yy",},},
   ],
   "Folders": [
