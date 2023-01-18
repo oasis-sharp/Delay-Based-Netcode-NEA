@@ -45,3 +45,30 @@ function runLengthDecode(compressed) {
   return level;
 }
 
+
+function read_file(fileID) {
+	var level = [];
+	var doubleAr = [];
+	var lineAr = [];
+	
+	while (!file_text_eoln(fileID))
+	{
+			var nextVal = file_text_read_real(fileID)
+		
+			if(nextVal != 5){
+				doubleAr = [];
+				array_push(doubleAr, file_text_read_real(fileID));
+				array_push(doubleAr, file_text_read_real(fileID));
+				array_push(lineAr, doubleAr);
+			}
+			else{
+				array_push(level, lineAr);
+				lineAr = 0;
+			}
+		
+	}
+	
+	file_text_close(fileID);
+	
+	return level;
+}
