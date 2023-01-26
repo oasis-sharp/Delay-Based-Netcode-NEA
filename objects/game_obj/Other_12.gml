@@ -20,7 +20,7 @@ var level999 =
  
 var level99 = runLengthDecode(level999); 
 
-
+/*
 var file;
 file = get_open_filename("text file|*.txt", "");
 if file != ""
@@ -29,6 +29,7 @@ if file != ""
 }
 
 var level1 = read_file(opened_file);
-var level1 = runLengthDecode(level1);
+*/
 
-create_level(level1);
+
+create_level(level99);
