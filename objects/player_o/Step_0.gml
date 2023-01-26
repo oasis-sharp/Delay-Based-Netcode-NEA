@@ -1,0 +1,2 @@
+input();
+player_script();
