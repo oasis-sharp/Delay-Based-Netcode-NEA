@@ -2,10 +2,10 @@
 
 function delete_from_array(array, term){
 	
-	var find = find_in_array(array, term)
+	var find = find_in_array(array, array_length(array), term)
 	
 	if(find != -4){
-		array_delete(array, find-1, 1)
+		array_delete(array, find, 1)
 	}
 }
 

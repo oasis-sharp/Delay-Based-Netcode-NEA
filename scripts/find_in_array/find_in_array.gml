@@ -1,9 +1,19 @@
-/// @function find_in_array(array, term);
+/// @function find_in_array(array, size, term);
 
-function find_in_array(array, term){
-	var loop = 0;
-	repeat (array_length_1d(array)) if (array[loop++] == term) return loop;
-	return -4;
+function find_in_array(array, i, term){
+    i--;
+     
+    if (i < 0) {
+        return -4;
+    }
+	
+	else{
+	    if (array[i] == term) {
+			return i;
+	    }
+	}
+
+    return find_in_array(array, i, term);
 }
 
 

@@ -4,13 +4,13 @@ function player_script(){
 
 	var move = (rightHeld - leftHeld);
 	
-	if(move != 0 and find_in_array(STATE, "grounded") != -4){
+	if(move != 0 and find_in_array(STATE,array_length(STATE), "grounded") != -4){
 		hsp = move * hsp_walk;
 		create_smoke_walk(hsp_walk);
 	}
 	else{ 
 		
-		if(find_in_array(STATE, "grounded") == -4 and move!=0){
+		if(find_in_array(STATE, array_length(STATE), "grounded") == -4 and move!=0){
 			if(move == 1){
 				if(hsp < max_x){
 					hsp+=air_accel*move;
@@ -23,7 +23,7 @@ function player_script(){
 			}
 		}
 		
-		if(find_in_array(STATE, "grounded") != -4){
+		if(find_in_array(STATE,array_length(STATE), "grounded") != -4){
 		hsp*=fric;
 			if(abs(hsp) < 1){
 				hsp = 0;	
@@ -32,7 +32,7 @@ function player_script(){
 	}
 
 	if(move != 0){
-		if(find_in_array(STATE, "grounded") != -4){
+		if(find_in_array(STATE,array_length(STATE), "grounded") != -4){
 			image_xscale=move
 		}
 		sprite_index = walk;
@@ -56,7 +56,7 @@ function player_script(){
 		delete_from_array(STATE, "grounded");
 	}
 	
-	if(find_in_array(STATE, "grounded") != -4 and (jumpHeld)){
+	if(find_in_array(STATE,array_length(STATE), "grounded") != -4 and (jumpHeld)){
 		vsp = vsp_jump; 
 	}
 
@@ -67,12 +67,12 @@ function player_script(){
 	// wallljump code
 	if(place_meeting(x+move,y,block_obj)){
 		
-		if(find_in_array(STATE, "grounded") == -4 and vsp > 0){
+		if(find_in_array(STATE,array_length(STATE), "grounded") == -4 and vsp > 0){
 			vsp/=wallslide_fr;
 			create_smoke_wall(2);
 		}
 	
-		if(move = px and jumpPressed and find_in_array(STATE, "grounded") == -4){
+		if(move = px and jumpPressed and find_in_array(STATE,array_length(STATE), "grounded") == -4){
 			hsp = move*walljump_speed;
 			vsp = vsp_jump;
 			image_xscale = -move;
