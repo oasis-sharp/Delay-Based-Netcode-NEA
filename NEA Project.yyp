@@ -3,6 +3,7 @@
   "resourceVersion": "1.6",
   "name": "NEA Project",
   "resources": [
+    {"id":{"name":"unpackage_inputs","path":"scripts/unpackage_inputs/unpackage_inputs.yy",},"order":6,},
     {"id":{"name":"add_to_array","path":"scripts/add_to_array/add_to_array.yy",},"order":0,},
     {"id":{"name":"block_outline","path":"sprites/block_outline/block_outline.yy",},"order":7,},
     {"id":{"name":"smoke_land","path":"objects/smoke_land/smoke_land.yy",},"order":0,},
@@ -20,6 +21,7 @@
     {"id":{"name":"failed_button","path":"sprites/failed_button/failed_button.yy",},"order":1,},
     {"id":{"name":"player_setup_o","path":"scripts/player_setup_o/player_setup_o.yy",},"order":3,},
     {"id":{"name":"red_tile","path":"sprites/red_tile/red_tile.yy",},"order":0,},
+    {"id":{"name":"package_inputs","path":"scripts/package_inputs/package_inputs.yy",},"order":8,},
     {"id":{"name":"block","path":"sprites/block/block.yy",},"order":2,},
     {"id":{"name":"gun_parent","path":"objects/gun_parent/gun_parent.yy",},"order":0,},
     {"id":{"name":"idle_old","path":"sprites/idle_old/idle_old.yy",},"order":5,},

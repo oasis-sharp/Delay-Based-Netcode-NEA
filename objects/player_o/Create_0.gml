@@ -1,4 +1,4 @@
 set_controls();
 player_setup_o();
-input();
+online_input();
 
