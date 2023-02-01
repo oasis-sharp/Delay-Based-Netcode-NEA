@@ -30,9 +30,13 @@ if (network_status == "host")
                     ds_list_delete(socketlist, ind);
                     break;
                 case network_type_data: // RECIEVING DATA
-                // Data handling here... 
+                // handle data
                     break;
             }
         }
     }
+}
+
+if(gameRunning == 1){
+	timer+=1;	
 }
