@@ -7,4 +7,7 @@ room_creation = 0;
 
 timer = 0;
 
-gameRunning = 0;
+gameRunning = 1;
+debugt = [];
+
+input_arr = [];

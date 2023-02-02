@@ -37,6 +37,17 @@ if (network_status == "host")
     }
 }
 
-if(gameRunning == 1){
-	timer+=1;	
+if (network_status == "client"){
+	if (ds_exists(async_load, ds_type_map)){
+		var networkId = ds_map_find_value(async_load, "id");
+		if(networkId == client_socket)
+		    {
+		    //We have a new packet from the server
+		    } 	
+	}
+}
+
+if(gameRunning == 1 and instance_exists(player)){
+	timer+=1;
+	add_to_array(input_arr, player.player_inp);
 }
