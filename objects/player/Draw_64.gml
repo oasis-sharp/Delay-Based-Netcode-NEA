@@ -1,1 +1,1 @@
-draw_text(60,60, json_stringify(player_inp[0]));
+draw_text(60,60, game_obj.newX);

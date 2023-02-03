@@ -18,7 +18,7 @@ function input(){
 		var ar = -4
 		var current = inps[i]
 		
-		if(current[0] > game_obj.timer + 20){
+		if(current[0] < game_obj.timer - 20){
 			array_delete(inps, i, 1);
 		}
 		
