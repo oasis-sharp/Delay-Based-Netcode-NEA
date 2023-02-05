@@ -1,1 +1,1 @@
-draw_text(60,60, game_obj.newX);
+draw_text(60,60,json_stringify(game_obj.online_inp));

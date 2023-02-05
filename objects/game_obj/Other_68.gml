@@ -31,9 +31,14 @@ if (network_status == "connected_client")
     if (networkId == client_socket)
     { 
 		if(ds_map_exists(async_load, "buffer")){
+			var tempAr = [];
 			var t_buffer = ds_map_find_value(async_load, "buffer"); 
-			var data = buffer_read(t_buffer, buffer_s16);	
+			for(var i=0; i<8; i++){
+				var data = buffer_read(t_buffer, buffer_s16);	
+				array_insert(tempAr, i, data)
+			}
 			newX = data;
+			online_inp = tempAr;
 		}
 	}
 }

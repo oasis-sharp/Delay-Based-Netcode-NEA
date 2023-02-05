@@ -13,3 +13,6 @@ debugt = [];
 newX = 0;
 
 input_arr = [];
+
+online_inp = [];
+buffered_online_inp = [];
