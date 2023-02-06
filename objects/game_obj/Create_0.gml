@@ -10,6 +10,9 @@ timer = 0;
 gameRunning = 1;
 debugt = [];
 
+online_inp = [];
+online_inp_buffer = [];
+
 newX = 0;
 
 input_arr = [];

@@ -13,6 +13,7 @@ if (network_status == "host")
             case network_type_connect: // CONNECTING 
                 var socket = ds_map_find_value(async_load, "socket");
                 ds_list_add(socketlist, socket);
+				timer = 0;
                 break;
             case network_type_disconnect: // DISCONNECTING 
                 var socket = ds_map_find_value(async_load, "socket");
@@ -30,10 +31,13 @@ if (network_status == "connected_client")
     var networkId = ds_map_find_value(async_load, "id");
     if (networkId == client_socket)
     { 
+		online_inp = [];
 		if(ds_map_exists(async_load, "buffer")){
 			var t_buffer = ds_map_find_value(async_load, "buffer"); 
-			var data = buffer_read(t_buffer, buffer_s16);	
-			newX = data;
+			for(var i = 0; i<8; i++){
+				array_insert(online_inp,array_length(online_inp), buffer_read(t_buffer, buffer_u32))
+			}
+		array_insert(online_inp_buffer, array_length(online_inp_buffer), online_inp);
 		}
 	}
 }
