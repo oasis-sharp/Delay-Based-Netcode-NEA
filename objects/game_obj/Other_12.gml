@@ -33,4 +33,3 @@ var level1 = read_file(opened_file);
 
 
 create_level(level99);
-instance_create_layer(64,64,"Instances", player_o);

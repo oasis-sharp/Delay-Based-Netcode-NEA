@@ -1,2 +1,2 @@
-online_input();
+input();
 player_script();

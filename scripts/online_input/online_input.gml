@@ -1,16 +1,17 @@
 /// @function online_input();
 function online_input(){
-	rightHeld = 0;
-	leftHeld = 0
-	jumpHeld = 0;
-	downHeld = 0; 
+	rightHeld = keyboard_check(right);
+	leftHeld = keyboard_check(left);
+	jumpHeld = keyboard_check(jump);
+	downHeld = keyboard_check(down); 
 
-	downPressed = 0;
-	jumpPressed = 0;
-	normalPressed = 0;
+	downPressed = keyboard_check_pressed(down);
+	jumpPressed = keyboard_check_pressed(jump);
+	normalPressed = keyboard_check_pressed(normal);
 		
+	var packagedInputs = [game_obj.timer,rightHeld, leftHeld, jumpHeld, downHeld, downPressed, jumpPressed, normalPressed]	
 	
-	var inps = game_obj.online_inp;
+	var inps = game_obj.input_arr;
 
 	for (var i = 0; i < array_length(inps); i++){
 		var ar = -4
@@ -38,5 +39,5 @@ function online_input(){
 		}
 	}
 	
-	
+	return(packagedInputs);
 }
