@@ -18,11 +18,11 @@ function online_input(){
 		var current = inps[i]
 		if(array_length(current) = 8){
 		
-			if(current[0] = game_obj.timer + 5){
-				// array_delete(inps, i, 1);
+			if(current[0] < game_obj.timer - 20){
+				array_delete(inps, i, 1);
 			}
 		
-			if(current[0] = game_obj.timer - 2){
+			if(current[0] > game_obj.timer - 5){
 				ar = inps[i];	
 			}
 		
@@ -36,11 +36,11 @@ function online_input(){
 				downPressed = ar[5];
 				jumpPressed = ar[6];
 				normalPressed = ar[7];
-			
+				break;
 			}
 		}
 	}
 	
-	
+
 	return(packagedInputs);
 }

@@ -16,3 +16,6 @@ online_inp_buffer = [];
 newX = 0;
 
 input_arr = [];
+
+client_socket = 0;
+server_socket = 0;
