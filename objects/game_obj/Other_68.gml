@@ -1,13 +1,12 @@
-// Check network status
+// Get the type of connection
+var t = ds_map_find_value(async_load, "type");
+
 if (network_status == "host")
 {
     // Check if networkId matches server_socket
     var networkId = ds_map_find_value(async_load, "id");
     if (networkId == server_socket)
-    {
-        // Get the type of connection
-        var t = ds_map_find_value(async_load, "type");
-        
+    {   
         // Check connection type
         switch (t)
         {
@@ -30,7 +29,7 @@ if (network_status == "host")
 
    
 var networkId = ds_map_find_value(async_load, "id");
-if (networkId == client_socket)
+if(t = network_type_data)
 { 
 	// Handle incoming data buffer
 	online_inp = [];
