@@ -5,7 +5,5 @@ function set_controls(){
 	up = ord("W");
 	
 	jump = vk_space;
-	dodge = ord("L");
-	special = ord("O");
 	normal = ord("P");
 }
