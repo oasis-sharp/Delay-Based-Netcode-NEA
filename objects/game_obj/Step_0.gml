@@ -22,7 +22,7 @@ if(network_status == "host"){
 	
 	for (var i = 0; i < ds_list_size(socketlist); ++i;) // loop through the socket list
 	    {
-	    newX = network_send_packet(ds_list_find_value(socketlist, i), t_buffer, buffer_tell(t_buffer)); // send the buffer data to each socket in the list
+	    network_send_packet(ds_list_find_value(socketlist, i), t_buffer, buffer_tell(t_buffer)); // send the buffer data to each socket in the list
 	    }
 	buffer_delete(t_buffer); // delete the buffer
 }
@@ -38,6 +38,6 @@ if(network_status == "connected_client"){
 		buffer_write(t_buffer , buffer_u32 , player.player_inp[i]);	// write the player input data to the buffer
 	}
 	
-	// newX = network_send_packet(client_socket, t_buffer, buffer_tell(t_buffer)); // send the buffer data to the connected client socket
+	// network_send_packet(client_socket, t_buffer, buffer_tell(t_buffer)); // send the buffer data to the connected client socket
 	buffer_delete(t_buffer); // delete the buffer
 }
