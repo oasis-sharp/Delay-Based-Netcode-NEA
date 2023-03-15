@@ -29,6 +29,7 @@ if (network_status == "host")
 if (network_status == "connected_client")
 {
     var networkId = ds_map_find_value(async_load, "id");
+	
     if (networkId == client_socket)
     { 
 		online_inp = [];
