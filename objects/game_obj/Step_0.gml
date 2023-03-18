@@ -41,3 +41,16 @@ if(network_status == "connected_client"){
 	// network_send_packet(client_socket, t_buffer, buffer_tell(t_buffer)); // send the buffer data to the connected client socket
 	buffer_delete(t_buffer); // delete the buffer
 }
+
+
+if(begin_timer > -2 and begin_timer < current_second){
+	timer = 0;
+	begin_timer = -4;
+	timer_sync = current_second;
+}
+
+if(timer_sync != current_second){
+	timer_sync = current_second;
+	timer = round(timer/10)*10;
+}
+

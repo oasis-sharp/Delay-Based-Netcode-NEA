@@ -16,6 +16,6 @@ function client(){
 	else {
 	    network_status = "connected_client";
 		// sprite_index = client_button;
-		timer = 0;
+		begin_timer = current_second+1;
 	}
 }

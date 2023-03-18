@@ -30,4 +30,6 @@ function player_setup(){
 	x_stretch_speed = 1.1;
 	y_stretch_speed = 1.05;
 	
+	delay = 3; // set 3 frame delay
+	
 }

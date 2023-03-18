@@ -13,7 +13,10 @@ debugt = [];
 online_inp = [];
 online_inp_buffer = [];
 
-newX = 0;
+begin_timer = -4;
+timer_sync = 0;
+
+levelStore=[];
 
 input_arr = [];
 

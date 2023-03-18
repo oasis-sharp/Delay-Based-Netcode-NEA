@@ -1,11 +1,11 @@
 
-function array_translation(index){
+function array_translation(obj_id){
 	
-	if(index == -4){
+	if(obj_id == -4){
 		return -4;	
 	}
 	else{
-		return index.object_index;	
+		return obj_id.object_index;	
 	}
 	
 }

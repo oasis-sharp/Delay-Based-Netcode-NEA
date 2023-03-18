@@ -51,7 +51,7 @@ function find_current_inputs(){
 			array_delete(inps, i, 1);
 		}
 		
-		if(current[0] = game_obj.timer - 2){
+		if(current[0] = game_obj.timer - delay){
 			ar = inps[i];	
 		}	
 	
