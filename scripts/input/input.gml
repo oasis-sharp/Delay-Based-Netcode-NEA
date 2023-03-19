@@ -1,6 +1,6 @@
 /// @function input();
 function input(){
-
+	
 	var packagedInputs = fetch_inputs();
 	array_insert(packagedInputs, 0, game_obj.timer);
 	
@@ -39,6 +39,7 @@ function fetch_inputs(){
 
 function find_current_inputs(){
 	
+	
 	var inps = game_obj.input_arr;
 	var ar = -4;
 	
@@ -51,9 +52,12 @@ function find_current_inputs(){
 			array_delete(inps, i, 1);
 		}
 		
-		if(current[0] = game_obj.timer - delay){
-			ar = inps[i];	
-		}	
+		var temp = binary_search(inps, game_obj.timer-delay)
+		
+		if(temp != -4)
+		{
+			ar = inps[temp]
+		}
 	
 	}
 	

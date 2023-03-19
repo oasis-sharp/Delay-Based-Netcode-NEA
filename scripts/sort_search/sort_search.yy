@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "find_input",
+  "name": "sort_search",
   "isDnD": false,
   "isCompatibility": false,
   "parent": {

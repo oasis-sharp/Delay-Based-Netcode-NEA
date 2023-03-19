@@ -38,7 +38,7 @@ if(network_status == "connected_client"){
 		buffer_write(t_buffer , buffer_u32 , player.player_inp[i]);	// write the player input data to the buffer
 	}
 	
-	// network_send_packet(client_socket, t_buffer, buffer_tell(t_buffer)); // send the buffer data to the connected client socket
+	network_send_packet(client_socket, t_buffer, buffer_tell(t_buffer)); // send the buffer data to the connected client socket
 	buffer_delete(t_buffer); // delete the buffer
 }
 

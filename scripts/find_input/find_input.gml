@@ -1,4 +1,3 @@
-
 function find_input(arr, time){
 	var l = array_length(arr);
 	
