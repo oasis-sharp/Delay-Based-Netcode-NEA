@@ -8,7 +8,8 @@ room_creation = 0;
 timer = 0;
 
 gameRunning = 1;
-debugt = [];
+
+hostIP = "127.0.0.1"
 
 online_inp = [];
 online_inp_buffer = [];

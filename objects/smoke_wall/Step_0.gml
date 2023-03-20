@@ -1,19 +1,3 @@
-event_inherited();
+event_inherited(); // inherit event from particle parent
 
-if(dir == -1){
-		if(xvel > 0){
-		xvel = 0;
-		x_accel = 0;
-		fade_speed=0.4;
-		}
-}
-
-if(dir == 1){
-		if(xvel < 0){
-		xvel = 0;
-		x_accel = 0;
-		fade_speed=0.4;
-		}
-}
-
-
+x_accel+=random_range(1,-1)/50;

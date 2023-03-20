@@ -1,5 +1,8 @@
 /// @function online_input();
 function online_input(){
+	
+	// set all default inputs to 0
+	
 	rightHeld = 0;
 	leftHeld = 0;
 	jumpHeld =0;
@@ -8,39 +11,19 @@ function online_input(){
 	downPressed =0;
 	jumpPressed = 0;
 	normalPressed =0;
-		
-	var packagedInputs = [game_obj.timer,rightHeld, leftHeld, jumpHeld, downHeld, downPressed, jumpPressed, normalPressed]	
 	
-	var inps = game_obj.online_inp_buffer;
-
-	for (var i = 0; i < array_length(inps); i++){
-		var ar = -4
-		var current = inps[i]
-		if(array_length(current) = 8){
-		
-			if(current[0] < game_obj.timer - 20){
-				array_delete(inps, i, 1);
-			}
-		
-			if(current[0] = game_obj.timer - delay){
-				ar = inps[i];	
-			}
+	var ar = find_current_inputs(game_obj.online_inp_buffer)
 		
 		
-			if(ar != -4){
-				rightHeld = ar[1];
-				leftHeld = ar[2];
-				jumpHeld = ar[3];
-				downHeld = ar[4];
-
-				downPressed = ar[5];
-				jumpPressed = ar[6];
-				normalPressed = ar[7];
-				break;
-			}
-		}
+	if(ar != -4){
+		rightHeld = ar[1];
+		leftHeld = ar[2];
+		jumpHeld = ar[3];
+		downHeld = ar[4];
+		
+		downPressed = ar[5];
+		jumpPressed = ar[6];
+		normalPressed = ar[7];
+			
 	}
-	
-
-	return(packagedInputs);
 }

@@ -27,7 +27,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "utility",
-    "path": "folders/Objects/utility.yy",
+    "name": "particles",
+    "path": "folders/Objects/utility/particles.yy",
   },
 }

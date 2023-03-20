@@ -12,8 +12,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "particle_parent",
-    "path": "objects/particle_parent/particle_parent.yy",
+    "name": "smoke_walk",
+    "path": "objects/smoke_walk/smoke_walk.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,

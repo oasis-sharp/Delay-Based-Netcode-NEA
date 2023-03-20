@@ -2,5 +2,8 @@ set_controls();
 player_setup();
 input();
 
+
+debug = -1;
+
 player_inp = [0,0,0,0,0,0,0,0,0,0,0];
-camera_ = instance_create_layer(x, y, "Instances_1", camera);
+instance_create_layer(x, y, "Instances_1", camera);

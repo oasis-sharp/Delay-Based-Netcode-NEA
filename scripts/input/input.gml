@@ -1,13 +1,14 @@
 /// @function input();
 function input(){
 	
-	var packagedInputs = fetch_inputs();
-	array_insert(packagedInputs, 0, game_obj.timer);
+	var packagedInputs = fetch_inputs(); // fetch inputs to return later
 	
-	var current_inputs = find_current_inputs();
+	array_insert(packagedInputs, 0, game_obj.timer); // insert these inputs into the game object array
+	
+	var current_inputs = find_current_inputs(game_obj.input_arr); // find the inputs that need to be play out in this frame
 		
 		
-	if(current_inputs != -4){
+	if(current_inputs != -4){ // set all the corresponding inputs as necessary for the player
 		rightHeld = current_inputs[1];
 		leftHeld = current_inputs[2];
 		jumpHeld = current_inputs[3];
@@ -19,10 +20,10 @@ function input(){
 			
 	}
 	
-	return(packagedInputs);
+	return(packagedInputs); // return inputs that have just been made
 }
 
-function fetch_inputs(){
+function fetch_inputs(){ // fetches inputs being made on current frame
 	
 	rightHeld = keyboard_check(right);
 	leftHeld = keyboard_check(left);
@@ -37,10 +38,9 @@ function fetch_inputs(){
 	return inputs;
 }
 
-function find_current_inputs(){
+function find_current_inputs(arr){ // given an array, finds the correct input with the given delay
 	
-	
-	var inps = game_obj.input_arr;
+	var inps = arr;
 	var ar = -4;
 	
 	for (var i = 0; i < array_length(inps); i++){
