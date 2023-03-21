@@ -6,7 +6,6 @@ function test(testName, expected, actual) {
     if (expected == actual) {
         show_debug_message("PASS: " + testName);
     } else {
-     //   show_debug_message("FAIL: " + testName + " - expected: " + string(expected) + ", actual: " + string(actual));
- show_debug_message("PASS: " + testName); 
+     show_debug_message("FAIL: " + testName + " - expected: " + string(expected) + ", actual: " + string(actual));
   }
 }

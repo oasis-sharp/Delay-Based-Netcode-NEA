@@ -25,8 +25,7 @@ client_socket = 0;
 server_socket = 0;
 
 
-var file;
-file = get_open_filename("text file|*.txt", "");
+var file = get_open_filename("text file|*.txt", "");
 if file != ""
 {
     var opened_file =file_text_open_read(file);
@@ -37,8 +36,6 @@ levelStore = runLengthDecode(levelStore);
 
 
 // UNIT TESTS
-
-
 
 
 show_debug_message("== TESTING == ");
@@ -100,3 +97,12 @@ var inputs = [  [1, 0, 1, 0, 1, 0, 1, 0],
 // Test the find_current_inputs function
 test("find_current_inputs finds the correct input with given delay", [3, 0, 1, 1, 0, 1, 1, 0], find_current_inputs(inputs, 1));
 test("find_current_inputs returns -4 if no matching input is found", -4, find_current_inputs(inputs, 10));
+
+show_debug_message("");
+
+// Test the string_split function with different input strings and delimiters
+test("string_split splits input string at delimiter", ["apple", "banana", "cherry"], string_split("apple/banana/cherry", "/"));
+test("string_split returns array with single item if no delimiter found", ["hello"], string_split("hello", "/"));
+test("string_split splits input string at every occurrence of delimiter", ["apple", "banana", "cherry"], string_split("apple/banana/cherry", "e"));
+test("string_split returns empty array if input string is empty", [], string_split("", "/"));
+test("string_split returns array with single item if input string contains only delimiter", [""], string_split("/", "/"));
