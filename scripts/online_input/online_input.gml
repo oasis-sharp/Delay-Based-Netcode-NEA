@@ -12,7 +12,7 @@ function online_input(){
 	jumpPressed = 0;
 	normalPressed =0;
 	
-	var ar = find_current_inputs(game_obj.online_inp_buffer)
+	var ar = find_current_inputs(game_obj.online_inp_buffer, player.delay)
 		
 		
 	if(ar != -4){

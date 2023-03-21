@@ -5,7 +5,7 @@ function input(){
 	
 	array_insert(packagedInputs, 0, game_obj.timer); // insert these inputs into the game object array
 	
-	var current_inputs = find_current_inputs(game_obj.input_arr); // find the inputs that need to be play out in this frame
+	var current_inputs = find_current_inputs(game_obj.input_arr, delay); // find the inputs that need to be play out in this frame
 		
 		
 	if(current_inputs != -4){ // set all the corresponding inputs as necessary for the player
@@ -38,7 +38,7 @@ function fetch_inputs(){ // fetches inputs being made on current frame
 	return inputs;
 }
 
-function find_current_inputs(arr){ // given an array, finds the correct input with the given delay
+function find_current_inputs(arr, del){ // given an array, finds the correct input with the given delay
 	
 	var inps = arr;
 	var ar = -4;
@@ -52,7 +52,7 @@ function find_current_inputs(arr){ // given an array, finds the correct input wi
 			array_delete(inps, i, 1);
 		}
 		
-		var temp = binary_search(inps, game_obj.timer-delay)
+		var temp = binary_search(inps, game_obj.timer-del)
 		
 		if(temp != -4)
 		{

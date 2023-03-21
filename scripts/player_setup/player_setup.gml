@@ -31,5 +31,9 @@ function player_setup(){
 	y_stretch_speed = 1.05;
 	
 	delay = 3; // set 3 frame delay
+
+	ini_open("save.ini");
+	control_scheme = ini_read_real("save", "scheme", 1);
+	ini_close();
 	
 }

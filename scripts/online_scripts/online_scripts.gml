@@ -4,6 +4,9 @@ function host(){
 	if (server_socket < 0) {
 	    //Connection error! Add failsafe codes here
 	}
+	else{
+		room=gameRoom;	
+	}
 }
 
 function client(){
@@ -16,6 +19,5 @@ function client(){
 	else {
 	    network_status = "connected_client";
 		// sprite_index = client_button;
-		begin_timer = current_second+1;
 	}
 }

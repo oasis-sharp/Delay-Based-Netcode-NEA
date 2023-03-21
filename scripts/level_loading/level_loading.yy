@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "test_scripts",
+  "name": "level_loading",
   "isDnD": false,
   "isCompatibility": false,
   "parent": {

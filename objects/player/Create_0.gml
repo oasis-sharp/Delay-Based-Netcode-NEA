@@ -1,5 +1,5 @@
-set_controls();
 player_setup();
+set_controls();
 input();
 
 
