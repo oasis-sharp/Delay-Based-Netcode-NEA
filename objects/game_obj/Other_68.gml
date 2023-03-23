@@ -4,6 +4,7 @@ if (ds_map_find_value(async_load, "id") == server_socket) {
 		var socket = ds_map_find_value(async_load, "socket");
 		ds_list_add(socketlist, socket);
 		begin_timer = current_second+1; // begin sync timer with a short delay
+		room=gameRoom;
 	}
 }
 
