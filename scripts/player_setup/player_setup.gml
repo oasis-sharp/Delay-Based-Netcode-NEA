@@ -27,9 +27,6 @@ function player_setup(){
 	x_stretch = 1;
 	y_stretch = 1; // stretch variables for some possible effects later down the line
 	
-	x_stretch_speed = 1.1;
-	y_stretch_speed = 1.05;
-	
 	delay = 3; // set 3 frame delay
 
 	ini_open("save.ini");

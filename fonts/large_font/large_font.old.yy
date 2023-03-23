@@ -1,7 +1,7 @@
 {
   "resourceType": "GMFont",
   "resourceVersion": "1.0",
-  "name": "debug_font",
+  "name": "large_font",
   "hinting": 0,
   "glyphOperations": 0,
   "interpreter": 0,

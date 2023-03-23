@@ -23,13 +23,6 @@ function player_setup_o(){
 	STATE = [];
 	
 	image_blend = c_grey;
-	
-	x_stretch = 1;
-	y_stretch = 1;
-	
-	x_stretch_speed = 1.1;
-	y_stretch_speed = 1.05;
-	
 
 	
 }
